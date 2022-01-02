@@ -15,11 +15,14 @@ public class List {
         return obj[idx];
     }
 
-    public void add(Object item) {
+    public void add(Object item) throws FullListException {
+        int limit = this.size-1;
+        if(cur==limit) throw new FullListException("The List is Full!!!");
         obj[cur++] = item;
     }
 
-    public void removeLast() {
+    public void removeLast() throws EmptyListException {
+        if(this.cur==-1) throw new EmptyListException("The List is Empty!!!");
         obj[--cur] = null;
     }
 }
