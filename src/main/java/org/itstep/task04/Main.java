@@ -7,7 +7,10 @@ public class Main {
     public static void main(String[] args) {
         // TODO: проверяйте ваш код здесь
         int[] list = new int[]{23, 43, 31, 12, 5, 10, 13};
+
+        //uncomment this line for successful code execution
         //Arrays.sort(list);
+
         try{
             System.out.printf("Binary Search %d in integer array %s %n", 12,
                     Arrays.toString(list));

@@ -17,12 +17,12 @@ public class List {
 
     public void add(Object item) throws FullListException {
         //int limit = this.size-1;
-        if(cur==this.size) throw new FullListException("The List is Full!!!" + " size: " + this.size + " occupied cells: " + (this.cur+1));
+        if(cur==this.size) throw new FullListException("The List is Full!!!" + " size: " + this.size + " attempt to write a cell # : " + (this.cur+1));
         obj[cur++] = item;
     }
 
     public void removeLast() throws EmptyListException {
-        if(this.cur==0) throw new EmptyListException("The List is Empty!!!"  + " size: " + this.size + " occupied cells: " + this.cur);
+        if(this.cur==0) throw new EmptyListException("The List is Empty!!!");
         obj[--cur] = null;
     }
 }

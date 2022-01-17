@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         // TODO: проверяйте ваш код здесь
         try{
             Runner newRunner = new Runner();
@@ -14,11 +14,11 @@ public class Main {
         {
             System.out.println("**halt**");
         }
-        catch(IOException ex)
+        /*      catch(IOException ex)
         {
             System.out.println(ex.getMessage());
-            //throw new Throwable();
-        }
+
+        }*/
 
 
     }

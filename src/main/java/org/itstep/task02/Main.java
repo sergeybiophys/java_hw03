@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO: проверяйте ваш код здесь
         try{
-            getPositiveLessHundredNumber(-10);
+            getPositiveLessHundredNumber(-2);
         }catch (NegativeNumberException ex) {
             System.out.println(ex.getMessage());
         }
